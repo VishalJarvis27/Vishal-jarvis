@@ -85,7 +85,10 @@ function startJarvis() {
         command.includes("jarvis")) {
       speak("जी, बताइए। मैं आपकी क्या मदद कर सकता हूँ?");
     } else if (command.includes("समय")) {
-      speak("समय जानने के लिए अपने फोन की घड़ी देखें।");
+     speak("समय जानने के लिए अपने फोन की घड़ी देखें"); 
+} }else if (command.includes("तारीख") || command.includes("date")) {
+    speak("आज तारीख है " + new Date().toLocaleDateString("hi-IN"));
+      ;
     } else if (command.includes("नमस्ते")) {
       speak("नमस्ते! आप कैसे हैं?");
     } else {
